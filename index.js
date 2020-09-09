@@ -11,6 +11,6 @@ const puppeteer = require('puppeteer');
         return headinglist.map(h => h.innerText)
     })
     console.log(result)
-        // await browser.waitForTarget(() => false);
+        await browser.waitForTarget(() => false);
     await browser.close();
 })();
